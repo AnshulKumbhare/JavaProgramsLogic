@@ -15,7 +15,7 @@ public class GCD {
     
     private static int gcdOfTwoNumber(int n1, int n2){
         int gcd = 1;
-        int max = Math.max(n1, n2);
+        int max = Math.min(n1, n2);
         for (int i = max; i >= 1; i--){
             if(n1 % i == 0 && n2 % i ==0){
                 gcd = i;
